@@ -17,6 +17,9 @@ searchInputEl.addEventListener('blur', function() {
 
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
+gsap.to(toTopEl, 0, {
+  x: 100
+});
 
 window.addEventListener('scroll', _.throttle(function() {
   if (window.scrollY > 500) {
